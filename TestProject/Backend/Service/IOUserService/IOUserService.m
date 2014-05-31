@@ -53,13 +53,12 @@
     IOUser *user1 = [[IOUser alloc]initWithDict:@{kIOUSER_FID:@1133183378,kIOUSER_Name:@"Yunas Qazi",kIOUSER_Id:@1}];
     IOUser *user2 = [[IOUser alloc]initWithDict:@{kIOUSER_FID:@100000780334679,kIOUSER_Name:@"Imran Khan",kIOUSER_Id:@2}];
     IOUser *user3 = [[IOUser alloc]initWithDict:@{kIOUSER_FID:@1536465468,kIOUSER_Name:@"Salman Ronaldo",kIOUSER_Id:@3}];
-//    IOUser *user4 = [[IOUser alloc]initWithDict:@{kIOUSER_FID:@1519660979,kIOUSER_Name:@"Nabeel Javaid",kIOUSER_Id:@4}];
-//    IOUser *user5 = [[IOUser alloc]initWithDict:@{kIOUSER_FID:@7952995,kIOUSER_Name:@"Omer Shakil",kIOUSER_Id:@5}];
+    IOUser *user4 = [[IOUser alloc]initWithDict:@{kIOUSER_FID:@1519660979,kIOUSER_Name:@"Nabeel Javaid",kIOUSER_Id:@4}];
+    IOUser *user5 = [[IOUser alloc]initWithDict:@{kIOUSER_FID:@7952995,kIOUSER_Name:@"Omer Shakil",kIOUSER_Id:@5}];
     
     
 
-    NSArray *usersArr = [NSArray arrayWithObjects:user1,user2,user3, nil];
-//	usersArr = [IOUser getAllUsersFromLocalDBWithContext:self.managedObjectContext];
+    NSArray *usersArr = [NSArray arrayWithObjects:user1,user2,user3,user4,user5, nil];
     successBlock(usersArr);
 	return usersArr;
 
